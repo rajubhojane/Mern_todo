@@ -1,0 +1,60 @@
+ Step 1: Delete Temporary Files Using Run Command
+Press Win + R to open the Run dialog.
+Type the following commands one by one and press Enter after each:
+shell
+Copy code
+%temp%
+This opens the Temp folder.
+Select all files (Ctrl + A) and delete them (Shift + Delete).
+Copy code
+temp
+This opens another temporary files folder.
+Delete all files in this folder as well.
+Copy code
+prefetch
+This opens the Prefetch folder (used to speed up app launches).
+Delete all files here.
+(Note: You may need administrator permission to delete some files.)
+✅ Step 2: Use Command Prompt to Delete Temporary Files
+Open CMD as Administrator:
+
+Press Win + S, type cmd, right-click on Command Prompt, and choose Run as administrator.
+Run the following commands one by one:
+
+css
+Copy code
+del /q/f/s %temp%\*
+Deletes all files inside the Temp folder.
+css
+Copy code
+del /q/f/s C:\Windows\Temp\*
+Deletes system temporary files.
+Copy code
+cleanmgr
+Opens the Disk Cleanup Tool.
+Select the C: drive, and then choose Temporary files, Recycle Bin, and Thumbnails to clean.
+✅ Step 3: Use Storage Sense (Automatic Method)
+Press Win + I to open Settings.
+Go to System → Storage → Storage Sense.
+Turn on Storage Sense to automatically delete temporary files.
+✅ Step 4: Use PowerShell Command
+Open PowerShell as Administrator.
+Run the following command to delete temporary files:
+mathematica
+Copy code
+Remove-Item -Path $env:TEMP\* -Force
+By following these steps, you can free up space and improve your laptop’s performance on Windows 11! 😊
+
+
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can make mi
